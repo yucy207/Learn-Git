@@ -1,0 +1,46 @@
+
+raw_data        /home/pub/project/meta_genomics/*
+# [path -> always /home/pub/project/meta_genomics/*]
+
+F_primer        CCTACGGGNGGCWGCAG
+
+R_primer        GACTACHVGGGTATCTAATCC
+
+intm_result     /home/pub/output/MGS/*/intm_result
+# [path -> always /home/pub/output/MGS/*]
+
+result          /home/zhengy/test/QC/raw/result
+# [path -> always project root dir]
+
+Clean_reads     50000
+# [character -> always clean_reads];
+
+dissi           0.03
+# [character -> always 0.03 for 16S/18S/ITS/nirK/nirS/nosZ and  0.05 for other fungene];
+
+type            16S
+# [character -> options: 16S/18S/ITS1/ITS2/nifh/nirS/nosZ/nirK/narG/norB/phoD];
+
+cutoff          80
+# [character -> options: 80 for  16S and 60 for ITS/AMF];
+
+database	RDP
+# [character -> define which database to use for classification; option only RDP/SILVA/UNITE/Greengene/PR2];
+
+soft            U
+# [character -> clustering method, options: U for USEARCH and Q for QIIME and N for UNOISE3];
+
+soft_tax        M
+# [character -> taxonomy method, options: M for MOTHUR and U for USEARCH ];
+
+trimOTUs        T
+# [character -> if trim OTUs, option: T or F];
+
+#rename_sample  /home/zhengy/test/18B0117E/tmp/list.xls
+# [character -> always renamelist.xls without header and only two column]
+
+group           /home/zhengy/test/18B0117E/tmp  group1.xls:group1,group2;group1,group3
+# [character -> always sample_groups.xls without header and only two column];
+# 指定差异分组分析，group配置末尾加冒号：和需要指定的分析组别的组名即可,指定多组用分号分开，不指定时按照默认的group1.xls分析;
+
+#env            /home/zhengy/test/18B0117E/tmp  group1_env.xls  group2_env.xls

@@ -1,0 +1,37 @@
+Sheet Name	标注与说明	
+QC_RawData	R1、R2	双端测序
+QC_RawData	Total Reads	总reads
+QC_RawData	Reads length	reads长度
+QC_RawData	Q20	reads Q20
+QC_RawData	Q30	reads Q30
+QC_RawData	BaseCount(M)	数据量（单位为M）
+QC_CleanData	Clean Reads	有效reads数目
+QC_CleanData	Raw Reads	总reads数目
+QC_CleanData	Clean Reads Ratio	富集效率
+TargetCoverage	 	每个样本在每个片段上覆盖的reads数统计,标记灰色的为reads数小于10的片段，测序深度偏低，测序结果准确性会降低。
+Metrics	BAIT_TERRITORY	目标区域覆盖的碱基数
+Metrics	TOTAL_READS	参与基因组比对的总reads数量
+Metrics	PF_READS	过滤后reads数量
+Metrics	PF_UQ_READS_ALIGNED	比对到基因组的reads数
+Metrics	PCT_PF_UQ_READS_ALIGNED	比对比例
+Metrics	PF_BASES_ALIGNED	比对到基因组的碱基数
+Metrics	PF_UQ_BASES_ALIGNED	比对到基因组的且比对分值大于0的碱基数
+Metrics	ON_BAIT_BASES	比对到目的区域的碱基数
+Metrics	PCT_USABLE_BASES_ON_BAIT	比对到目的区域的碱基比例
+Metrics	NEAR_BAIT_BASES	比对到目的区域附近的碱基数
+Metrics	OFF_BAIT_BASES	未比对到目的区域与目的区域附近的碱基数
+Metrics	PCT_SELECTED_BASES	比对到目的区域与目的区域附近的碱基的百分比
+Metrics	PCT_OFF_BAIT	未比对到目的区域的碱基数百分比
+Metrics	FOLD_ENRICHMENT	富集倍数
+Metrics	MEAN_BAIT_COVERAGE	平均测序深度
+Metrics	PCT_TARGET_BASES_1X	1X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_2X	2X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_10X	10X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_20X	20X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_30X	30X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_40X	40X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_50X	50X覆盖的碱基比例
+Metrics	PCT_TARGET_BASES_100X	100X覆盖的碱基比例
+Metrics	Q20	Q20
+Metrics	Q30	Q30
+注：	Metrics表是使用bwa比对甲基化数据到甲基化参考序列上的统计信息，用于后续SNV分析

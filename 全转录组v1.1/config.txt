@@ -1,0 +1,17 @@
+project    /home/pub/output/WTS/18B0409B/data_analysis
+miRNA_project   /home/pub/output/WTS/18B0409B_miRNA/data_analysis
+report     /home/chengsy/workspace/WTS/19B0415B/report
+raw_data   /home/pub/project/Transcriptome/18B0409B
+samples    S10-1,S10-2,S10-3,S12-1,S12-2,S12-3,S15-1,S15-2,S15-3,S24-1,S24-2,S24-3,S4-1,S4-2,S4-3
+
+organ mm10
+
+group control case1 4W059,4WJ29;aa1-374,aa1-375,aa1R32
+group control case2 4W059,4WJ29;aa3-314,aa3-317,aa3H46
+group control case3 4W059,4WJ29;aa5-W90,aa5-W88,aa5-W98
+
+anova control,case1,case2,case3 4W059,4WJ29;aa1-374,aa1-375,aa1R32;aa3-314,aa3-317,aa3H46;aa5-W90,aa5-W88,aa5-W98
+
+overlap control,case1;control,case2;control,case3 all;all;all 
+
+time /home/chengsy/workspace/WTS/19B0415B/time/design.txt
