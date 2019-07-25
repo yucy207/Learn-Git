@@ -10,4 +10,4 @@ my $head= <IN>;
 $head=~ s/[\r\n]//g;
 my @heads= split "\t" , $head;
 while (<IN>){
-
+asdasd
