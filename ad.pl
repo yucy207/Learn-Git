@@ -24,4 +24,4 @@ while (<IN>){
 }
 close IN;
 close OUT;
-print "$hash{'Position'}{'2'}";
+print "$hash{'Position'}{'2'}";asdasdad
