@@ -7,8 +7,3 @@ my $OUT = shift @ARGV;
 open IN , $IN or die "can't open $IN!\n";
 open OUT, ">$OUT" or die "can't open $OUT!\n";
 my $head= <IN>;
-$head=~ s/[\r\n]//g;
-my @heads= split "\t" , $head;
-while (<IN>){
-asdasd
-ascacsac
